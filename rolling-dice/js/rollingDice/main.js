@@ -10,10 +10,14 @@ const getRoll = () => {
 
         let die1 = (Math.floor(Math.random() * 6) + 1);
         let die2 = (Math.floor(Math.random() * 6) + 1);
+
         let message = (`${die1} + ${die2} == ${die1 + die2}`);
+
         if (die1 == die2) {
+
             console.log(message += " DOUBLES!");
         } else {
+            
             console.log(message);
         }
     }
